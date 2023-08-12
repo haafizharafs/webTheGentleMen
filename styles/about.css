@@ -1,0 +1,450 @@
+* {padding: 0; margin: 0;}
+
+.header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+}
+
+/*TOP LOGO & NAVIGATION BAR*/
+.navbar {
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    background: azure;
+    color: black;
+}
+
+.navbar ul {
+    padding-right: 270px;
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+.logo2 {
+    display: none;
+}
+
+/*SECTION: TOP LEFT ABOUT*/
+.top-left-about {
+    background-color: black;
+    width: 50%;
+    height: 85vh;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    z-index: 4;
+}
+.top-left-about .about-text {
+    padding-top: 60px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.top-left-about .about-text .about-title {
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 80px;
+    padding-bottom: 40px;
+}
+.top-left-about .about-text .about-description {
+    font-family: "Noto Sans";
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.top-left-about .about-text a {
+    text-decoration: none;
+    font-family: "Anton";
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 5px;
+}
+.top-left-about .about-text a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*SECTION: TOP RIGHT ABOUT*/
+.top-right-about {
+    margin-top: 53px;
+    bottom: 0;
+    background-color: rgb(50, 50, 50);
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    
+}
+.top-right-about .top-right-about-images {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 75%;
+    background-color: azure;
+    overflow: hidden;
+}
+.top-right-about .top-right-about-images img {
+    height: 100%;
+    width: 100%;
+}
+.top-right-about .top-right-about-images .hidden {
+    display: none;
+}
+
+/*
+@keyframes about-slider {
+    0%,100%{
+        background-image: url('../images/top-about-image-1.jpg') ;
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url('../images/top-about-image-1.jpg');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url('../images/top-about-image-2-fixed.jpg');
+        width: 70%;
+        height: 75%;
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url('../images/top-about-image-2-fixed.jpg');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('../images/top-about-image-1.jpg');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+*/
+
+/*ABOUT SECTION WORKED
+.about {
+    margin-top: 54px;
+    background-color: black;
+    width: 100%;
+    height: 95vh;
+}
+.about-img img {
+    width: 50%;
+    height: 95vh;
+    float: right;
+}
+
+.about-img {
+    text-align: right;
+}
+.about-text .about-title {
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 80px;
+}
+.about .about-text {
+    padding-top: 60px;
+    text-align: center;
+    padding-right: 640px;
+    color: white;
+}
+.about .about-description {
+    font-family: "Noto Sans";
+    padding-top: 55px;
+    font-weight: bold;
+}
+*/
+
+/*SECTION: MEMBERS*/
+.members {
+    height: 95vh;
+    width: 100%;
+    background-color: azure;
+}
+.members .members-title {
+    font-family: "Anton";
+    padding-top: 15px;
+    text-align: center;
+    color: black;
+    font-size: 80px;
+}
+.member1 {
+    padding-top: 20px;
+}
+.member1 .member-description .carli-name {
+    font-family: "Anton";
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+.member1 .member-description p{
+    font-family: "Noto Sans";
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: left;
+}
+.carli {
+    width: 20%;
+    float: left;
+    margin: 5px;
+}
+.member2 {
+    padding-top: 15px;
+}
+.member2 .member-description .troy-name {
+    font-family: "Anton";
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 5px;
+    text-align: right;
+}
+.member2 .member-description p{
+    font-family: "Noto Sans";
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: right;
+}
+.troy {
+    padding-top: 70px;
+}
+.troy img {
+    width: 13%;
+    float: right;
+    margin: 5px;
+}
+
+
+/*BOTTOM NAVIGATION*/
+.bottom-nav {
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+    height: 8vh;
+}
+.bottom-nav ul {
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.bottom-nav li {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+}
+.social-media-icons {
+    justify-content: center;
+    display: flex;
+}
+.social-media-icons li a {
+    padding: 0;
+}
+.social-media-icons img {
+    width: 100%;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+    /*TOP LOGO & NAVIGATION BAR*/
+    .navbar {
+        position: fixed;
+        margin: auto;
+        float: left;
+        background-color: #000000;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .navbar li {
+        float: left;
+        display: flex;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .navbar li a:hover {
+        background: azure;
+        color: black;
+    }
+
+    .navbar ul {
+        padding-left: 180px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        display: none;
+    }
+
+    .logo2 {
+        float: left;
+        width: 12%;
+        display: block;
+        position: absolute;
+    }
+
+    /*SECTION: TOP LEFT ABOUT*/
+    .top-left-about {
+        background-color: black;
+        width: 100%;
+        height: 65vh;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        z-index: 4;
+    }
+    .top-left-about .about-text {
+        padding-top: 70px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+    }
+    .top-left-about .about-text .about-title {
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 56px;
+        padding-bottom: 20px;
+    }
+    .top-left-about .about-text .about-description {
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    /*SECTION: TOP RIGHT ABOUT*/
+    .top-right-about {
+        margin-top: 53px;
+        bottom: 0;
+        background-color: rgb(50, 50, 50);
+        width: 100%;
+        height: 40vh;
+    }
+    .top-right-about .top-right-about-images {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: 75%;
+        background-color: azure;
+        overflow: hidden;
+    }
+    .top-right-about .top-right-about-images img {
+        height: 100%;
+        width: 100%;
+    }
+    .top-right-about .top-right-about-images .hidden {
+        display: none;
+    }
+
+    /*SECTION: MEMBERS*/
+    .members {
+        height: 125vh;
+        width: 100%;
+        background-color: azure;
+    }
+    .members .members-title {
+        font-family: "Anton";
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        font-size: 80px;
+    }
+    .member1 {
+        padding-top: 20px;
+    }
+    .member1 .member-description .carli-name {
+        font-family: "Anton";
+        color: black;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .member1 .member-description p{
+        font-family: "Noto Sans";
+        font-weight: bold;
+        padding-top: 30px;
+        padding-left: 5px;
+        text-align: left;
+    }
+    .carli {
+        width: 40%;
+        float: left;
+        margin: 5px;
+    }
+    .member2 {
+        padding-top: 15px;
+    }
+    .member2 .member-description .troy-name {
+        font-family: "Anton";
+        color: black;
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 5px;
+        text-align: right;
+    }
+    .member2 .member-description p{
+        font-family: "Noto Sans";
+        font-weight: bold;
+        padding-top: 110px;
+        text-align: right;
+    }
+    .troy {
+        padding-top: 30px;
+    }
+    .troy img {
+        width: 30%;
+        float: right;
+        margin: 5px;
+    }
+}

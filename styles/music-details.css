@@ -1,0 +1,591 @@
+* {padding: 0; margin: 0;}
+
+.header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/*TOP LOGO & NAVIGATION BAR*/
+.navbar {
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    background: azure;
+    color: black;
+}
+
+.navbar ul {
+    padding-right: 230px;
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.logo2 {
+    display: none;
+}
+
+/*SECTION: TOP music LOGO*/
+.top-music-title {
+    margin-top: 54px;
+    background-color: azure;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    display: flex;
+}
+.top-music-title .top-music-title-text {
+    padding-top: 20px;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 80px;
+    color: black;
+}
+
+/*SECTION: music LIST*/
+.music-container {
+    background-color: black;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+}
+/*LEFT*/
+.music-template-left {
+    margin-top: 25px;
+    background-color: black;
+    width: 30%;
+    height: 81vh;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: blue;
+    z-index: 2;
+}
+.music-template-left .title {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.music-template-left .title .name {
+    color: white;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 36px;
+}
+.music-template-left .title .by {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    padding-right: 8px;
+}
+.music-template-left .title .band-name {
+    color: blue;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+}
+.music-template-left .tracklist {
+    padding-top: 35px;
+    padding-left: 15px;
+}
+.music-template-left .tracklist .tracklist-title {
+    color: white;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 26px;
+}
+.music-template-left .tracklist .tracks {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+}
+.music-template-left .buy {
+    padding-left: 15px;
+    padding-top: 35px;
+}
+.music-template-left .buy .text {
+    color: blue;
+    font-family: "Anton";
+    font-size: 22px;
+    float: left;
+    padding-right: 10px;
+}
+.music-template-left .buy .price {
+    color: white;
+    font-family: "Anton";
+    font-size: 22px;
+    padding-right: 10px;
+}
+.music-template-left .description {
+    padding-top: 30px;
+    padding-left: 15px;
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 11px;
+}
+.music-template-left .music-template-left-mobile iframe {
+    display: none;
+}
+
+/*-------------ALBUM-------------*/
+/*SECTION: music LIST*/
+.music-container-album {
+    background-color: black;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+}
+/*LEFT*/
+.music-template-left-album {
+    margin-top: 25px;
+    background-color: black;
+    width: 30%;
+    height: 81vh;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: blue;
+    z-index: 2;
+}
+.music-template-left-album .title {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.music-template-left-album .title .name {
+    color: white;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 36px;
+}
+.music-template-left-album .title .by {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    padding-right: 8px;
+}
+.music-template-left-album .title .band-name {
+    color: blue;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+}
+.music-template-left-album .tracklist {
+    padding-top: 35px;
+    padding-left: 15px;
+}
+.music-template-left-album .tracklist .tracklist-title {
+    color: white;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 26px;
+}
+.music-template-left-album .tracklist .tracks {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+}
+.music-template-left-album .buy {
+    padding-left: 15px;
+    padding-top: 35px;
+}
+.music-template-left-album .buy .text {
+    color: blue;
+    font-family: "Anton";
+    font-size: 22px;
+    float: left;
+    padding-right: 10px;
+}
+.music-template-left-album .buy .price {
+    color: white;
+    font-family: "Anton";
+    font-size: 22px;
+    padding-right: 10px;
+}
+.music-template-left-album .description {
+    padding-top: 30px;
+    padding-left: 15px;
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 11px;
+}
+.music-template-left-album .music-template-left-mobile iframe {
+    display: none;
+}
+
+/*RIGHT*/
+.music-template-right {
+    margin-top: 25px;
+    background-color: black;
+    width: 30%;
+    height: 81vh;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: blue;
+    text-align: right;
+    z-index: 2;
+}
+.music-template-right iframe {
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+/*BOTTOM SOCIALS*/
+.bottom-nav {
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+    height: 8vh;
+    z-index: 3;
+}
+.bottom-nav ul {
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.bottom-nav li {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+}
+.bottom-nav .social-media-icons {
+    justify-content: center;
+    display: flex;
+}
+.bottom-nav .social-media-icons li a {
+    padding: 0;
+}
+.bottom-nav .social-media-icons img {
+    width: 100%;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+    /*TOP LOGO & NAVIGATION BAR*/
+    .navbar {
+        position: fixed;
+        margin: auto;
+        float: left;
+        background-color: #000000;
+        width: 100%;
+        z-index: 4;
+    }
+
+    .navbar li {
+        float: left;
+        display: flex;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .navbar li a:hover {
+        background: azure;
+        color: black;
+    }
+
+    .navbar ul {
+        padding-left: 180px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        display: none;
+    }
+
+    .logo2 {
+        float: left;
+        width: 12%;
+        display: block;
+        position: absolute;
+    }
+
+    /*SECTION: TOP music LOGO*/
+    .top-music-title {
+        margin-top: 54px;
+        background-color: azure;
+        width: 100%;
+        height: 18vh;
+        justify-content: center;
+        display: flex;
+    }
+    .top-music-title .top-music-title-text {
+        padding-top: 5px;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 80px;
+        color: black;
+    }
+
+    /*SECTION: music LIST*/
+    .music-container {
+        background-color: black;
+        width: 100%;
+        height: 152vh;
+        display: flex;
+        justify-content: center;
+    }
+    .music-container-album {
+        background-color: black;
+        width: 100%;
+        height: 136vh;
+        display: flex;
+        justify-content: center;
+    }
+    /*LEFT*/
+    .music-template-left {
+        margin-top: 25px;
+        background-color: black;
+        width: 80%;
+        height: 139vh;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-color: blue;
+        z-index: 2;
+    }
+    .music-template-left .title {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .music-template-left .title .name {
+        color: white;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 36px;
+    }
+    .music-template-left .title .by {
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 16px;
+        float: left;
+        padding-right: 8px;
+    }
+    .music-template-left .title .band-name {
+        color: blue;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .music-template-left .tracklist {
+        padding-top: 35px;
+        padding-left: 15px;
+    }
+    .music-template-left .tracklist .tracklist-title {
+        color: white;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 26px;
+    }
+    .music-template-left .tracklist .tracks {
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .music-template-left .buy {
+        padding-left: 15px;
+        padding-top: 35px;
+    }
+    .music-template-left .buy .text {
+        color: blue;
+        font-family: "Anton";
+        font-size: 22px;
+        float: left;
+        padding-right: 10px;
+    }
+    .music-template-left .buy .price {
+        color: white;
+        font-family: "Anton";
+        font-size: 22px;
+        padding-right: 10px;
+    }
+    .music-template-left .description {
+        padding-top: 30px;
+        padding-left: 15px;
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .music-template-left .music-template-left-mobile iframe {
+        display: block;
+        width: 250px;
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+
+    /*LEFT FOR ALBUM*/
+    .music-template-left-album {
+        margin-top: 25px;
+        background-color: black;
+        width: 80%;
+        height: 122vh;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-color: blue;
+        z-index: 2;
+    }
+    .music-template-left-album .title {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .music-template-left-album .title .name {
+        color: white;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .music-template-left-album .title .by {
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 16px;
+        float: left;
+        padding-right: 8px;
+    }
+    .music-template-left-album .title .band-name {
+        color: blue;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .music-template-left-album .tracklist {
+        padding-top: 35px;
+        padding-left: 15px;
+    }
+    .music-template-left-album .tracklist .tracklist-title {
+        color: white;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 26px;
+    }
+    .music-template-left-album .tracklist .tracks {
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .music-template-left-album .buy {
+        padding-left: 15px;
+        padding-top: 35px;
+    }
+    .music-template-left-album .buy .text {
+        color: blue;
+        font-family: "Anton";
+        font-size: 22px;
+        float: left;
+        padding-right: 10px;
+    }
+    .music-template-left-album .buy .price {
+        color: white;
+        font-family: "Anton";
+        font-size: 22px;
+        padding-right: 10px;
+    }
+    .music-template-left-album .description {
+        padding-top: 30px;
+        padding-left: 15px;
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .music-template-left-album .music-template-left-mobile iframe {
+        display: block;
+        width: 250px;
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+
+    /*RIGHT*/
+    .music-template-right {
+        display: none;
+    }
+
+    /*BOTTOM SOCIALS*/
+    .bottom-nav {
+        bottom: 0;
+        position: fixed;
+        margin: auto;
+        float: left;
+        background-color: #000000;
+        width: 100%;
+        height: 8vh;
+        z-index: 3;
+    }
+    .bottom-nav ul {
+        justify-content: center;
+        display: flex;
+        float: left;
+    }
+    .bottom-nav li {
+        justify-content: center;
+        display: flex;
+        padding: 3px;
+    }
+    .bottom-nav .social-media-icons {
+        justify-content: center;
+        display: flex;
+    }
+    .bottom-nav .social-media-icons li a {
+        padding: 0;
+    }
+    .bottom-nav .social-media-icons img {
+        width: 100%;
+    }
+}

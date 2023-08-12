@@ -1,0 +1,141 @@
+* {padding: 0; margin: 0;}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        background-image: url('../images/bg-carli.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url('../images/bg-carli.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url('../images/bg-tory.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url('../images/bg-tory.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('../images/bg-carli.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/*TOP LOGO & NAVIGATION BAR*/
+.navbar {
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background: white;
+    color: black;
+}
+
+.navbar ul {
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 4%;
+}
+
+/*BODY
+#body-home {
+    background-image: url("../images/bg-carli.png");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+    
+/*BOTTOM SOCIALS MENU*/
+.navbar-bottom {
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar-bottom li {
+    float: left;
+    display: flex;
+}
+
+.navbar-bottom li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar-bottom li a:hover {
+    background: white;
+    color: black;
+}
+
+.navbar-bottom ul {
+    justify-content: center;
+    display: flex;
+}
+
+.navbar-bottom img {
+    width: 5%;
+}
+
+/*ABOUT*/
+.about-class {
+    text-align: center;
+    color: white;
+}
+.about-title {
+    font-weight: bold;
+    padding-top: 140px;
+    padding-right: 670px;
+}
+.about-text {   
+    font-weight: bold;
+    padding-top: 80px;
+    padding-right: 670px;
+}

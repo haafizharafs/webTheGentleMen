@@ -1,0 +1,230 @@
+* {padding: 0; margin: 0;}
+
+.header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/*TOP LOGO & NAVIGATION BAR*/
+.navbar {
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    background: azure;
+    color: black;
+}
+
+.navbar ul {
+    padding-right: 230px;
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.logo2 {
+    display: none;
+}
+
+/*SECTION: TOP music LOGO*/
+.top-music-title {
+    margin-top: 54px;
+    background-color: azure;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    display: flex;
+}
+.top-music-title .top-music-title-text {
+    padding-top: 20px;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 80px;
+    color: black;
+}
+
+/*SECTION: music LIST*/
+.music-container {
+    background-color: black;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+}
+.music-gallery {
+    padding-left: 50px;
+    width: 75%;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    justify-content: center;
+}
+.music-gallery .musics img {
+    border: 2px solid;
+    border-color: azure;
+    width: 80%;
+    cursor: pointer;
+}
+.music-gallery .musics img:hover {
+    filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.music-gallery .musics p {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: bold;
+}
+.music-gallery .musics a {
+    text-decoration: none;
+}
+.musics {
+    z-index: 2;
+}
+
+/*BOTTOM SOCIALS*/
+.bottom-nav {
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+    height: 8vh;
+    z-index: 3;
+}
+.bottom-nav ul {
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.bottom-nav li {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+}
+.bottom-nav .social-media-icons {
+    justify-content: center;
+    display: flex;
+}
+.bottom-nav .social-media-icons li a {
+    padding: 0;
+}
+.bottom-nav .social-media-icons img {
+    width: 100%;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+    /*TOP LOGO & NAVIGATION BAR*/
+    .navbar {
+        position: fixed;
+        margin: auto;
+        float: left;
+        background-color: #000000;
+        width: 100%;
+        z-index: 4;
+    }
+
+    .navbar li {
+        float: left;
+        display: flex;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .navbar li a:hover {
+        background: azure;
+        color: black;
+    }
+
+    .navbar ul {
+        padding-left: 180px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        display: none;
+    }
+
+    .logo2 {
+        float: left;
+        width: 12%;
+        display: block;
+        position: absolute;
+    }
+
+    /*SECTION: TOP music LOGO*/
+    .top-music-title {
+        margin-top: 54px;
+        background-color: azure;
+        width: 100%;
+        height: 18vh;
+        justify-content: center;
+        display: flex;
+    }
+    .top-music-title .top-music-title-text {
+        padding-top: 4px;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 80px;
+        color: black;
+    }
+
+    /*SECTION: Music LIST*/
+    .music-container {
+        background-color: black;
+        width: 100%;
+        height: 290vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .music-gallery .musics img {
+        border: 2px solid;
+        border-color: azure;
+        width: 75%;
+        cursor: pointer;
+    }
+}

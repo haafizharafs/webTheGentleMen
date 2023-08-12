@@ -1,0 +1,316 @@
+* {padding: 0; margin: 0;}
+
+.header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/*TOP LOGO & NAVIGATION BAR*/
+.navbar {
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    background: azure;
+    color: black;
+}
+
+.navbar ul {
+    padding-right: 230px;
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.logo2 {
+    display: none;
+}
+
+/*SECTION: TOP NEWS LOGO*/
+.top-news-title {
+    margin-top: 54px;
+    background-color: azure;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    display: flex;
+}
+.top-news-title .top-news-title-text {
+    padding-top: 20px;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 80px;
+    color: black;
+}
+
+/*SECTION: LEFT NEWS LOGO*/
+.left-news-title {
+    background-color: black;
+    width: 20%;
+    height: 95vh;
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.left-news-title .left-news-title-text {
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 80px;
+    color: white;
+}
+
+/*SECTION: NEWS LIST*/
+.news-container {
+    background-color: black;
+    width: 80%;
+    height: 95vh;
+    display: flex;
+}
+.news-container .news-list {
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 69px;
+    color: white;
+    float: inherit;
+    z-index: 2;
+}
+.news-container .news-list img {
+    float: left;
+    padding-right: 10px;
+}
+.news-container .news-list .news-content .news-img-1 {
+    width: 25%;
+}
+.news-container .news-list .news-content .news-img-2 {
+    width: 17.5%;
+}
+.news-container .news-list .news-content .news-img-3 {
+    width: 20.5%;
+}
+.news-container .news-list li {
+    float: left;
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+.news-container .news-list .news-title {
+    padding-bottom: 15px;
+    font-family: "Anton";
+    font-weight: 100;
+    font-size: 20px;
+}
+.news-container .news-list .news-desc {
+    font-family: "Noto Sans";
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+.news-container .news-list a {
+    text-decoration: none;
+    color: white;
+}
+.news-content a:hover {
+    filter: brightness(55%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/*BOTTOM SOCIALS*/
+.bottom-nav {
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+    height: 8vh;
+    z-index: 3;
+}
+.bottom-nav ul {
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.bottom-nav li {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+}
+.bottom-nav .social-media-icons {
+    justify-content: center;
+    display: flex;
+}
+.bottom-nav .social-media-icons li a {
+    padding: 0;
+}
+.bottom-nav .social-media-icons img {
+    width: 100%;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+    /*TOP LOGO & NAVIGATION BAR*/
+    .navbar {
+        position: fixed;
+        margin: auto;
+        float: left;
+        background-color: #000000;
+        width: 100%;
+    }
+
+    .navbar li {
+        float: left;
+        display: flex;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .navbar li a:hover {
+        background: azure;
+        color: black;
+    }
+
+    .navbar ul {
+        padding-left: 180px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        display: none;
+    }
+
+    .logo2 {
+        float: left;
+        width: 12%;
+        display: block;
+        position: absolute;
+    }
+
+    /*SECTION: TOP NEWS LOGO*/
+    .top-news-title {
+        margin-top: 54px;
+        background-color: azure;
+        width: 100%;
+        height: 18vh;
+        justify-content: center;
+        display: flex;
+    }
+    .top-news-title .top-news-title-text {
+        padding-top: 4px;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 80px;
+        color: black;
+    }
+
+    /*SECTION: LEFT NEWS LOGO*/
+    .left-news-title {
+        background-color: black;
+        width: 20%;
+        height: 95vh;
+        justify-content: center;
+        display: flex;
+        float: left;
+        display: none;
+    }
+
+    /*SECTION: NEWS LIST*/
+    .news-container {
+        background-color: black;
+        width: 100%;
+        height: 85vh;
+        display: flex;
+    }
+    .news-container .news-list {
+        width: 90%;
+        padding-left: 20px;
+        padding-top: 69px;
+        color: white;
+        float: inherit;
+        z-index: 2;
+    }
+    .news-container .news-list img {
+        float: left;
+        padding-right: 10px;
+    }
+    .news-container .news-list .news-content .news-img-1 {
+        width: 30%;
+    }
+    .news-container .news-list .news-content .news-img-2 {
+        width: 30%;
+    }
+    .news-container .news-list .news-content .news-img-3 {
+        width: 30%;
+    }
+
+    .news-container .news-list li {
+        float: left;
+        list-style-type: none;
+        padding-bottom: 25px;
+    }
+    .news-container .news-list .news-title {
+        padding-bottom: 15px;
+        font-family: "Anton";
+        font-weight: 100;
+        font-size: 20px;
+    }
+    .news-container .news-list .news-desc {
+        font-family: "Noto Sans";
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+    }
+    .news-container .news-list a {
+        text-decoration: none;
+        color: white;
+    }
+    .news-content a:hover {
+        filter: brightness(55%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+}

@@ -1,0 +1,205 @@
+* {padding: 0; margin: 0;}
+
+/*HEADER & SLIDESHOW*/
+.header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 15s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+        background-image: url('../images/bg-carli.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url('../images/bg-carli.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url('../images/bg-tory.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url('../images/bg-tory.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('../images/bg-carli.png');
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/*TOP LOGO & NAVIGATION BAR*/
+.navbar {
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-family: "Anton";
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.navbar li a:hover {
+    background: azure;
+    color: black;
+}
+
+.navbar ul {
+    padding-right: 250px;
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+.logo2 {
+    display: none;
+}
+.container-mobile {
+    display: none;
+}
+
+/*BOTTOM NAVIGATION*/
+.bottom-nav {
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    float: left;
+    background-color: #000000;
+    width: 100%;
+    height: 8vh;
+    z-index: 3;
+}
+.bottom-nav ul {
+    justify-content: center;
+    display: flex;
+    float: left;
+}
+.bottom-nav li {
+    justify-content: center;
+    display: flex;
+    padding: 3px;
+}
+.bottom-nav .social-media-icons {
+    justify-content: center;
+    display: flex;
+}
+.bottom-nav .social-media-icons li a {
+    padding: 0;
+}
+.bottom-nav .social-media-icons img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    /*HEADER & SLIDESHOW*/
+    .header {
+        animation: none;
+        z-index: 3;
+    }
+
+    /*CONTAINER*/
+    .container-mobile {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 94vh;
+        background: linear-gradient(
+            to right,
+            black 0%,
+            black 50%,
+            grey 50%,
+            grey 100%
+        );
+    }
+    .container-mobile .title {
+        position: absolute;
+        bottom: 0%;
+        left: 2%;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 90px;
+        color: white;
+        text-align: left;
+    }
+    .container-mobile .hidden {
+        display: none;
+    }
+    
+    /*TOP LOGO & NAVIGATION BAR*/
+    .navbar {
+        position: fixed;
+        margin: auto;
+        float: left;
+        background-color: #000000;
+        width: 100%;
+    }
+
+    .navbar li {
+        float: left;
+        display: flex;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        font-family: "Anton";
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .navbar li a:hover {
+        background: azure;
+        color: black;
+    }
+
+    .navbar ul {
+        padding-left: 180px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        display: none;
+    }
+
+    .logo2 {
+        float: left;
+        width: 12%;
+        display: block;
+        position: absolute;
+    }
+}
